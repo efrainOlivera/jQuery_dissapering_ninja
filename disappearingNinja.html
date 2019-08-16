@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>disappearingNinja</title>
+	<link rel="stylesheet" type="text/css" href="disappearingNinja.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<article>
+		<img src="ninja.png">
+		<img src="ninja.png">
+		<img src="ninja.png">
+		<img src="ninja.png">
+		<img src="ninja.png">
+		<img src="ninja.png">
+		<button type="button">Reset</button>
+
+
+
+
+	</article>
+	<script>
+		$(document).ready (function() {
+
+			$('img').click(function() {
+				console.log("click");
+				$(this).hide();
+
+			})
+
+			$("button").click(function(){
+				console.log(" button click");
+				$("img").show();
+			})		
+		});
+
+
+
+
+
+	</script>
+
+</body>
+</html>
